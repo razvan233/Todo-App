@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(70deg, rgb(180, 180, 52), rgb(245, 95, 90));
+}
+
+.main-content {
+    min-height: 100vh;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    h1 {
+        padding: 6rem 0 1rem 0;
+        font-size: 2.5rem;
+    }
+    .todoList {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        form {
+            width: 60%;
+            input {
+                padding: 1rem;
+                margin-bottom: 2rem;
+                border: none;
+                width: 100%;
+                position: relative;
+            }
+            button {
+                background-color: white;
+                color: rgb(245, 95, 90);
+                position: absolute;
+                transform: translateX(-100%);
+                border: none;
+                padding: 1rem;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                &:hover {
+                    background-color: rgb(245, 95, 90);
+                    color: white;
+                }
+                i {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+    ul {
+        width: 60%;
+        li {
+            margin: 1rem 0;
+            background-color: white;
+            color: black;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            padding: 1rem;
+            transition: all 0.5s ease;
+            .deleteBtn {
+                background-color: white;
+                color: rgb(245, 95, 90);
+                border: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                padding: 1rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: rgb(245, 95, 90);
+                    color: white;
+                }
+                i {
+                    pointer-events: none;
+                }
+            }
+            .doneBtn {
+                background-color: white;
+                color: rgb(91, 255, 77);
+                border: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(-100%);
+                height: 100%;
+                padding: 1rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: rgb(91, 255, 77);
+                    ;
+                    color: white;
+                }
+                i {
+                    pointer-events: none;
+                }
+            }
+            &.toggle {
+                opacity: 0.3;
+                text-decoration: line-through;
+            }
+            &.delete {
+                transform: rotateZ(20deg);
+                opacity: 0;
+            }
+        }
+    }
+}

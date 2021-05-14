@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(70deg, #b4b434, #f55f5a);
+}
+
+.main-content {
+  min-height: 100vh;
+  width: 60%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content h1 {
+  padding: 6rem 0 1rem 0;
+  font-size: 2.5rem;
+}
+
+.main-content .todoList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-content .todoList form {
+  width: 60%;
+}
+
+.main-content .todoList form input {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  width: 100%;
+  position: relative;
+}
+
+.main-content .todoList form button {
+  background-color: white;
+  color: #f55f5a;
+  position: absolute;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  border: none;
+  padding: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.main-content .todoList form button:hover {
+  background-color: #f55f5a;
+  color: white;
+}
+
+.main-content .todoList form button i {
+  pointer-events: none;
+}
+
+.main-content ul {
+  width: 60%;
+}
+
+.main-content ul li {
+  margin: 1rem 0;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.main-content ul li .deleteBtn {
+  background-color: white;
+  color: #f55f5a;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.main-content ul li .deleteBtn:hover {
+  background-color: #f55f5a;
+  color: white;
+}
+
+.main-content ul li .deleteBtn i {
+  pointer-events: none;
+}
+
+.main-content ul li .doneBtn {
+  background-color: white;
+  color: #5bff4d;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  height: 100%;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.main-content ul li .doneBtn:hover {
+  background-color: #5bff4d;
+  color: white;
+}
+
+.main-content ul li .doneBtn i {
+  pointer-events: none;
+}
+
+.main-content ul li.toggle {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+
+.main-content ul li.delete {
+  -webkit-transform: rotateZ(20deg);
+          transform: rotateZ(20deg);
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
